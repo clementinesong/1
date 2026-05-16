@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>未命名互动文本</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <button class="ghost-button" id="backButton" type="button">返回</button>
+        <div class="title-group">
+          <p id="chapterLabel">Scene</p>
+          <h1 id="pageTitle">未命名互动文本</h1>
+        </div>
+        <button class="ghost-button" id="resetButton" type="button">重开</button>
+      </header>
+
+      <main id="app" class="page-card" aria-live="polite"></main>
+
+      <footer class="status-panel">
+        <div>
+          <span>Love</span>
+          <strong id="loveScore">0</strong>
+        </div>
+        <div>
+          <span>Madness</span>
+          <strong id="madnessScore">0</strong>
+        </div>
+        <button class="music-button" id="musicButton" type="button">BGM：待设计</button>
+      </footer>
+    </div>
+
+    <audio id="pageAudio" loop preload="none"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
